@@ -50,6 +50,17 @@
                 <base-dropdown tag="li" class="nav-item">
                     <a slot="title" href="#" class="nav-link" data-toggle="dropdown" role="button">
                         <i class="ni ni-collection d-lg-none"></i>
+                        <span class="nav-link-inner--text">게시판</span>
+                    </a>
+                    <router-link to="/board" class="dropdown-item">일반게시판</router-link>
+                    <router-link to="/cafe" class="dropdown-item">카페</router-link>
+                    <router-link to="/qna" class="dropdown-item">Q&A</router-link>
+                    <router-link to="/contact" class="dropdown-item">문의하기</router-link>
+                    <router-link to="/faq" class="dropdown-item">자주묻는질문</router-link>
+                </base-dropdown>
+                <base-dropdown tag="li" class="nav-item">
+                    <a slot="title" href="#" class="nav-link" data-toggle="dropdown" role="button">
+                        <i class="ni ni-collection d-lg-none"></i>
                         <span class="nav-link-inner--text">Examples</span>
                     </a>
                     <router-link to="/landing" class="dropdown-item">Landing</router-link>
