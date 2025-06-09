@@ -6,6 +6,11 @@ import Landing from "./views/Landing.vue";
 import Login from "./views/Login.vue";
 import Register from "./views/Register.vue";
 import Profile from "./views/Profile.vue";
+import Board from "./views/Board.vue";
+import Cafe from "./views/Cafe.vue";
+import Contact from "./views/Contact.vue";
+import QnA from "./views/QnA.vue";
+import Faq from "./views/Faq.vue";
 
 Vue.use(Router);
 
@@ -45,6 +50,51 @@ export default new Router({
       components: {
         header: AppHeader,
         default: Profile,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/board",
+      name: "board",
+      components: {
+        header: AppHeader,
+        default: Board,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/cafe",
+      name: "cafe",
+      components: {
+        header: AppHeader,
+        default: Cafe,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/contact",
+      name: "contact",
+      components: {
+        header: AppHeader,
+        default: Contact,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/qna",
+      name: "qna",
+      components: {
+        header: AppHeader,
+        default: QnA,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/faq",
+      name: "faq",
+      components: {
+        header: AppHeader,
+        default: Faq,
         footer: AppFooter
       }
     }
